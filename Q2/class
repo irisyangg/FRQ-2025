@@ -15,14 +15,14 @@ public class SignedText{
         }
     }
     public String addSignature(String parameter){
+       if(parameter.indexOf(parameter.getSignature)==0){
+        return parameter.substring(parameter.getSignature.length(), parameter.length());
+       }
         if(parameter.indexOf(parameter.getSignature)<0){
             return parameter+parameter.getSignature();
-        }
+       }
         if(parameter.indexOf(parameter.getSignature)>0){
             return parameter;
-        }
-        if(parameter.indexOf(parameter.getSignature)=0){
-            return ???;
         }
     }
 }
